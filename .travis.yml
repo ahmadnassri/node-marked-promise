@@ -1,0 +1,14 @@
+sudo: false
+
+language: node_js
+
+node_js:
+ - 4.x
+ - 5.x
+
+cache:
+  directories:
+    - node_modules
+
+after_script:
+  - npm run codeclimate
