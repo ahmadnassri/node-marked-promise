@@ -40,6 +40,6 @@
     "standard": "^6.0.8"
   },
   "dependencies": {
-    "marked": "*"
+    "marked": "0.3.6"
   }
 }
