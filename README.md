@@ -1,28 +1,57 @@
 # marked-promise [![version][npm-version]][npm-url] [![License][npm-license]][license-url]
 
-[Promise] version of [marked]:
-
+> [Promise] version of [marked]:
 > Match files using the patterns the shell uses, like stars and stuff.
 
 [![Build Status][travis-image]][travis-url]
 [![Downloads][npm-downloads]][npm-url]
 [![Code Climate][codeclimate-quality]][codeclimate-url]
 [![Coverage Status][codeclimate-coverage]][codeclimate-url]
+[![Dependency Status][dependencyci-image]][dependencyci-url]
 [![Dependencies][david-image]][david-url]
 
 ## Install
 
-```sh
-npm install --save marked-promise
+```bash
+npm install --production --save marked-promise
+```
+
+## Usage
+
+I reccomend using an optimized build matching your Node.js environment version, otherwise, the standard `require` would work just fine.
+
+```js
+/*
+ * Node 6
+ * Built using `babel-preset-es2015-node6`
+ */
+const marked = require('marked-promise/lib/node6')
+
+/*
+ * Node 5
+ * Built using `babel-preset-es2015-node5`
+ */
+const marked = require('marked-promise/lib/node5')
+
+/*
+ * Node 4
+ * Built using `babel-preset-es2015-node4`
+ */
+const marked = require('marked-promise/lib/node4')
+
+/*
+ * Node >=0.10 <=0.12 & ES5
+ * Built using `babel-preset-es2015`
+ * Note: 
+ *   - additional package is required: `babel-runtime`
+ *   - npm install --production --save babel-runtime
+ */
+var marked = require('marked-promise')
 ```
 
 ## API
 
-```js
-var marked = require('marked-promise')
-```
-
-### marked(markdownString [, options])
+### marked(markdown [, options])
 
 *pattern*: `String`  
 *options*: `Object`
@@ -43,11 +72,13 @@ marked('I am using __markdown__.')
 
 The option object will be directly passed to [marked](https://github.com/chjj/marked#options).
 
-## License
+----
+> :copyright: [www.ahmadnassri.com](https://www.ahmadnassri.com/) &nbsp;&middot;&nbsp;
+> License: [ISC][license-url] &nbsp;&middot;&nbsp;
+> Github: [@ahmadnassri](https://github.com/ahmadnassri) &nbsp;&middot;&nbsp;
+> Twitter: [@ahmadnassri](https://twitter.com/ahmadnassri)
 
-[ISC License](LICENSE) &copy; [Ahmad Nassri](https://www.ahmadnassri.com/)
-
-[license-url]: https://github.com/ahmadnassri/marked-promise/blob/master/LICENSE
+[license-url]: http://choosealicense.com/licenses/isc/
 
 [travis-url]: https://travis-ci.org/ahmadnassri/marked-promise
 [travis-image]: https://img.shields.io/travis/ahmadnassri/marked-promise.svg?style=flat-square
@@ -63,6 +94,9 @@ The option object will be directly passed to [marked](https://github.com/chjj/ma
 
 [david-url]: https://david-dm.org/ahmadnassri/marked-promise
 [david-image]: https://img.shields.io/david/ahmadnassri/marked-promise.svg?style=flat-square
+
+[dependencyci-url]: https://dependencyci.com/github/ahmadnassri/marked-promise
+[dependencyci-image]: https://dependencyci.com/github/ahmadnassri/marked-promise/badge?style=flat-square
 
 [marked]: https://github.com/chjj/marked
 [Promise]: http://promisesaplus.com/
