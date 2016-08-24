@@ -59,7 +59,7 @@
     "cz-conventional-changelog": "^1.2.0",
     "echint": "^1.5.3",
     "semantic-release": "^6.3.0",
-    "standard": "^7.1.2",
+    "standard": "^8.0.0",
     "tap": "^6.3.2",
     "tap-mocha-reporter": "^2.0.1"
   },
