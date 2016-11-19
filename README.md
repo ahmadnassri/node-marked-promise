@@ -13,7 +13,7 @@
 ## Install
 
 ```bash
-npm install --production --save marked-promise
+npm install --only=production --save marked-promise
 ```
 
 ## Usage
@@ -42,7 +42,7 @@ var marked-promise = require('marked-promise')
 
 ### marked(markdown [, options])
 
-*pattern*: `String`  
+*pattern*: `String`
 *options*: `Object`
 Return: `Object` ([Promise])
 
