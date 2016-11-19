@@ -18,35 +18,24 @@ npm install --production --save marked-promise
 
 ## Usage
 
-I reccomend using an optimized build matching your Node.js environment version, otherwise, the standard `require` would work just fine.
+I recommend using an optimized build matching your Node.js environment version, otherwise, the standard `require` would work just fine with any version of Node `>= v4.0` .
 
 ```js
 /*
+ * Node 7
+ */
+const marked-promise = require('marked-promise/lib/node7')
+
+/*
  * Node 6
- * Built using `babel-preset-es2015-node6`
  */
-const marked = require('marked-promise/lib/node6')
+const marked-promise = require('marked-promise/lib/node6')
 
 /*
- * Node 5
- * Built using `babel-preset-es2015-node5`
+ * Node 4 (Default)
+ * Note: additional ES2015 polyfills may be required
  */
-const marked = require('marked-promise/lib/node5')
-
-/*
- * Node 4
- * Built using `babel-preset-es2015-node4`
- */
-const marked = require('marked-promise/lib/node4')
-
-/*
- * Node >=0.10 <=0.12 & ES5
- * Built using `babel-preset-es2015`
- * Note: 
- *   - additional package is required: `babel-runtime`
- *   - npm install --production --save babel-runtime
- */
-var marked = require('marked-promise')
+var marked-promise = require('marked-promise')
 ```
 
 ## API
@@ -73,7 +62,7 @@ marked('I am using __markdown__.')
 The option object will be directly passed to [marked](https://github.com/chjj/marked#options).
 
 ----
-> :copyright: [www.ahmadnassri.com](https://www.ahmadnassri.com/) &nbsp;&middot;&nbsp;
+> :copyright: [ahmadnassri.com](https://www.ahmadnassri.com/) &nbsp;&middot;&nbsp;
 > License: [ISC][license-url] &nbsp;&middot;&nbsp;
 > Github: [@ahmadnassri](https://github.com/ahmadnassri) &nbsp;&middot;&nbsp;
 > Twitter: [@ahmadnassri](https://twitter.com/ahmadnassri)
