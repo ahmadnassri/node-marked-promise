@@ -57,7 +57,7 @@
     "echint": "^4.0.1",
     "semantic-release": "^6.3.2",
     "snazzy": "^5.0.0",
-    "tap": "^9.0.3"
+    "tap": "^10.0.1"
   },
   "dependencies": {
     "marked": "*"
