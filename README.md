@@ -24,18 +24,18 @@ I recommend using an optimized build matching your Node.js environment version, 
 /*
  * Node 7
  */
-const marked-promise = require('marked-promise/lib/node7')
+const marked = require('marked-promise/lib/node7')
 
 /*
  * Node 6
  */
-const marked-promise = require('marked-promise/lib/node6')
+const marked = require('marked-promise/lib/node6')
 
 /*
  * Node 4 (Default)
  * Note: additional ES2015 polyfills may be required
  */
-var marked-promise = require('marked-promise')
+var marked = require('marked-promise')
 ```
 
 ## API
