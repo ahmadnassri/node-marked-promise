@@ -1,6 +1,6 @@
 'use strict'
 
-const marked = require('../lib')
+const marked = require('..')
 const tap = require('tap')
 
 tap.test('marked-promise', (assert) => {
