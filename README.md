@@ -1,4 +1,4 @@
-# marked-promise [![version][npm-version]][npm-url] [![License][npm-license]][license-url]
+# marked-promise [![version][npm-version]][npm-url] [![License][license-image]][license-url]
 
 > [Promise] version of [marked]:
 > Match files using the patterns the shell uses, like stars and stuff.
@@ -14,28 +14,6 @@
 
 ```bash
 npm install --only=production --save marked-promise
-```
-
-## Usage
-
-I recommend using an optimized build matching your Node.js environment version, otherwise, the standard `require` would work just fine with any version of Node `>= v4.0` .
-
-```js
-/*
- * Node 7
- */
-const marked = require('marked-promise/lib/node7')
-
-/*
- * Node 6
- */
-const marked = require('marked-promise/lib/node6')
-
-/*
- * Node 4 (Default)
- * Note: additional ES2015 polyfills may be required
- */
-var marked = require('marked-promise')
 ```
 
 ## API
@@ -68,12 +46,12 @@ The option object will be directly passed to [marked](https://github.com/chjj/ma
 > Twitter: [@ahmadnassri](https://twitter.com/ahmadnassri)
 
 [license-url]: http://choosealicense.com/licenses/isc/
+[license-image]: https://img.shields.io/github/license/ahmadnassri/marked-promise.svg?style=flat-square
 
 [travis-url]: https://travis-ci.org/ahmadnassri/marked-promise
 [travis-image]: https://img.shields.io/travis/ahmadnassri/marked-promise.svg?style=flat-square
 
 [npm-url]: https://www.npmjs.com/package/marked-promise
-[npm-license]: https://img.shields.io/npm/l/marked-promise.svg?style=flat-square
 [npm-version]: https://img.shields.io/npm/v/marked-promise.svg?style=flat-square
 [npm-downloads]: https://img.shields.io/npm/dm/marked-promise.svg?style=flat-square
 
