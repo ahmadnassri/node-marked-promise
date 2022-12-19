@@ -1,0 +1,8 @@
+version: 2.0
+
+id: node-marked-promise
+
+about:
+  title: Marked Promise
+  description: Promise version of marked
+  repository: ahmadnassri/node-marked-promise
