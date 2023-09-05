@@ -1,6 +1,6 @@
 {
-  "include": [
-    { "id": "NPM", "registry": "https://registry.npmjs.org", "name": "marked-promise" },
-    { "id": "GITHUB", "registry": "https://npm.pkg.github.com", "name": "@ahmadnassri/marked-promise" }
+  "registry": [
+    { "id": "NPM", "url": "https://registry.npmjs.org", "name": "marked-promise" },
+    { "id": "GITHUB", "url": "https://npm.pkg.github.com", "name": "@ahmadnassri/marked-promise" }
   ]
 }
