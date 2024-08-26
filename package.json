@@ -37,6 +37,6 @@
     "tap": "^18.5.2"
   },
   "dependencies": {
-    "marked": "^4.2.4"
+    "marked": "^14.1.0"
   }
 }
